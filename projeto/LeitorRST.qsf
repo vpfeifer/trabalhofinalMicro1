@@ -1,0 +1,102 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+# Date created = 19:48:33  June 26, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		LeitorRST_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY FLEX10K
+set_global_assignment -name DEVICE "EPF10K20RC240-4"
+set_global_assignment -name TOP_LEVEL_ENTITY LeitorRST
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:48:33  JUNE 26, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name END_TIME "100 us"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE LeitorRST.vwf
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS ON
+set_location_assignment PIN_97 -to R
+set_location_assignment PIN_99 -to S
+set_location_assignment PIN_101 -to T
+set_location_assignment PIN_91 -to CLOCK
+set_location_assignment PIN_33 -to chave1
+set_location_assignment PIN_34 -to chave2
+set_location_assignment PIN_29 -to pbRESET
+set_location_assignment PIN_28 -to pbSET
+set_location_assignment PIN_94 -to LOAD
+set_location_assignment PIN_87 -to CLEAR
+set_parameter -name PIN_41 PIN_84 -to COPIA
+set_location_assignment PIN_82 -to PP
+set_location_assignment PIN_84 -to COPIA
+set_global_assignment -name FLEX10K_DEVICE_IO_STANDARD TTL
+set_location_assignment PIN_41 -to Rin
+set_location_assignment PIN_40 -to Sin
+set_location_assignment PIN_39 -to Tin
+set_location_assignment PIN_17 -to Rout
+set_location_assignment PIN_24 -to Sout
+set_location_assignment PIN_20 -to Tout
+set_global_assignment -name MISC_FILE "C:/Users/Vinicius/Desktop/MICRO1_novo/projeto/LeitorRST.dpf"
+set_global_assignment -name QIP_FILE contador.qip
+set_global_assignment -name QIP_FILE registrador.qip
+set_global_assignment -name QIP_FILE comparador.qip
+set_global_assignment -name BDF_FILE LeitorRST.bdf
+set_global_assignment -name VHDL_FILE uc_prox_estados.vhd
+set_global_assignment -name QIP_FILE segurador_estado.qip
+set_global_assignment -name VHDL_FILE load_clear_output.vhd
+set_global_assignment -name BDF_FILE unidadeControle.bdf
+set_global_assignment -name BDF_FILE GeradorRST.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE LeitorRST.vwf
+set_global_assignment -name QIP_FILE divisorFrequencia.qip
+set_global_assignment -name QIP_FILE desloc_osciloscopio.qip
+set_global_assignment -name QIP_FILE teste.qip
+set_global_assignment -name QIP_FILE testepp.qip
+set_global_assignment -name QIP_FILE dffpp.qip
+set_global_assignment -name QIP_FILE contPP.qip
+set_global_assignment -name QIP_FILE multiplexer.qip
+set_global_assignment -name QIP_FILE dff_chaves.qip
+set_global_assignment -name QIP_FILE ../geradorRST/lpm_tff0.qip
+set_global_assignment -name QIP_FILE simple_dff.qip
+set_global_assignment -name QIP_FILE contadorModulo6.qip
+set_global_assignment -name QIP_FILE contadorClearAs.qip
+set_global_assignment -name VHDL_FILE compFase.vhd
+set_global_assignment -name BDF_FILE comparadorFase.bdf
+set_global_assignment -name VHDL_FILE result.vhd
+set_global_assignment -name QIP_FILE ledDff.qip
+set_global_assignment -name VHDL_FILE timeout_logic.vhd
+set_global_assignment -name QIP_FILE ../timeoutTest/lpm_counter0.qip
+set_global_assignment -name QIP_FILE ff.qip
+set_global_assignment -name MISC_FILE "C:/Users/TEMP.MICROPRO03.001/Desktop/MICRO1_novo/MICRO1_novo/projeto/LeitorRST.dpf"

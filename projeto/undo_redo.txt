@@ -1,0 +1,26 @@
+GED
+
+	Undo Commands
+	     1.	Move
+	     2.	Move
+	     3.	Properties
+	     4.	Delete Insert
+	     5.	Properties
+	     6.	Insert Bus
+	     7.	Move
+	     8.	Move
+	     9.	Update Symbol or Block
+
+
+RPW
+
+	Undo Commands
+	     1.	||Compilation Report||Flow Summary
+
+
+RPW
+
+	Undo Commands
+	     1.	||Simulation Report||Simulator||Simulation Waveforms
+
+

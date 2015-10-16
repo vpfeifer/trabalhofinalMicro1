@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity uc_load_clear_output is
+        PORT (Q : IN std_logic_vector (3 downto 0);
+                  LOAD,CLEAR: OUT std_logic);
+end uc_load_clear_output;
+
+
+architecture behavior of uc_load_clear_output is
+begin
+-- LOAD = Q2 Q1' Q0 PP ;
+--CLEAR = Q2 Q1' Q0 PP  + Q2' Q1 Q0' PP  + Q3' Q2' Q1' Q0' PP' CMP;
+
+-- Q2' Q1 Q0' PP  + Q2 Q1' Q0 PP  + Q3 Q0 CMP + Q3' Q2' Q1' Q0' PP' CMP;
+
+  
+ -- LOAD <= (Q(2) and (not Q(1)) and Q(0) and PP);
+  --CLEAR <= ((not Q(2)) and Q(1) and (not Q(0)) and PP) or (Q(2) and  (not Q(1)) and  Q(0) and PP) or (Q(3) and Q(0) and CMP) or ((not Q(3)) and (not Q(2)) and (not Q(1)) and (not Q(0)) and (not PP) and CMP);
+  
+  LOAD <= (not Q(3)) and Q(2) and Q(1) and Q(0);
+  CLEAR <= ((not Q(3)) and Q(1) and Q(0)) or (Q(2) and Q(1) and Q(0));
+  
+end behavior;

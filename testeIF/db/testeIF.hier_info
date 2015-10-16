@@ -1,0 +1,41 @@
+|testeIF
+OUT2 <= out[2].DB_MAX_OUTPUT_PORT_TYPE
+b2 => ledResult:inst.buttons[2]
+b1 => ledResult:inst.buttons[1]
+b0 => ledResult:inst.buttons[0]
+led[0] => ledResult:inst.ledIN[0]
+led[1] => ledResult:inst.ledIN[1]
+led[2] => ledResult:inst.ledIN[2]
+r1 => ledResult:inst.r[1]
+r0 => ledResult:inst.r[0]
+OUT1 <= out[1].DB_MAX_OUTPUT_PORT_TYPE
+OUT0 <= out[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testeIF|ledResult:inst
+ledIN[0] => result[2]~6.DATAB
+ledIN[0] => result[1]~3.DATAA
+ledIN[0] => result[0]~1.DATAB
+ledIN[1] => result[2]~6.DATAA
+ledIN[1] => result[1]~4.DATAB
+ledIN[1] => result[0]~0.DATAB
+ledIN[2] => result[2]~8.DATAB
+ledIN[2] => result[1]~3.DATAB
+ledIN[2] => result[0]~0.DATAA
+r[0] => Equal1.IN0
+r[0] => Equal2.IN1
+r[0] => Equal3.IN0
+r[1] => Equal1.IN1
+r[1] => Equal2.IN0
+r[1] => Equal3.IN1
+buttons[0] => result[0]~2.DATAB
+buttons[0] => Equal0.IN0
+buttons[1] => result[1]~5.DATAB
+buttons[1] => Equal0.IN1
+buttons[2] => result[2]~10.DATAB
+buttons[2] => Equal0.IN2
+result[0] <= result[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

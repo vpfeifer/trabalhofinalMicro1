@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="LeitorRST">
+		<CBX_INST_ENTRY INSTANCE_NAME="|LeitorRST|contadorModulo6:inst21|lpm_counter:lpm_counter_component|alt_counter_f10ke:wysi_counter|lpm_compare:$00010" CBX_FILE_NAME="cmpr_bvf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LeitorRST|contadorModulo6:inst21|lpm_counter:lpm_counter_component|alt_counter_f10ke:wysi_counter|lpm_constant:$00008" CBX_FILE_NAME="lpm_constant_374.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LeitorRST|divisorFrequencia:inst8|lpm_counter:lpm_counter_component|alt_counter_f10ke:wysi_counter|lpm_constant:$00022" CBX_FILE_NAME="lpm_constant_7i4.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LeitorRST|multiplexer:inst10|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_vnd.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LeitorRST|desloc_osciloscopio:inst6|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_ojc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LeitorRST|divisorFrequencia:inst8|lpm_counter:lpm_counter_component|alt_counter_f10ke:wysi_counter|lpm_compare:$00024" CBX_FILE_NAME="cmpr_01g.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
